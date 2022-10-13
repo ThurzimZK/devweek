@@ -3,11 +3,124 @@
 :root{
     --font-padrao: 'VT323', monospace;
 }
-*{
-    font-family: var(--font-padrao);
-    font-size: 1.1em;
-}
+body{
+    background: url(../assets/fundo-site.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 
-img{
-    width: 20%;
+    font-family: var(--font-padrao);
+    color: #f3f3f3;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;/* alinha verticalmente por causa do flex direction que por padrao é row */
+    min-height: 100vh;
+    padding: 30px;
+}
+.card{
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card .my-info{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/* alinha horizontalmente por causa do flex direction column */
+    gap: 10px
+    ;
+}
+.card .my-info img{
+    border-radius: 50px;
+    border: 4px solid #02d08f;
+}
+.card .my-info .name{
+    font-size: 26px;
+}
+.card .my-info .office{
+    font-size: 20px;
+    color:  #b8bbc5;
+}
+.card .content{
+    margin-top: 15px;
+}
+.card .content .tabs{
+    display: flex;
+}
+.card .content .tabs .tab{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out; 
+}
+.card .tabs img{
+    width: 30px;
+}
+.card .content .tabs .tab.select{
+    background-color: #262626;
+}
+.card .info-tabs{
+    background-color: #262626;
+}
+.card .tabs .tab:hover{
+    background-color: #414141;
+}
+.card .tabs .tab.select:hover{
+    background-color: #414141;
+}
+.info-tabs .info{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+.info-tabs .info.select{
+    display: block;
+}
+.info-tabs .sub-title{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.info-tabs .desc{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+.info-tabs .desc span{
+    color: #02d08f;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+.social-media li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition:  opacity 0.2s ease-in-out;
+} 
+.social-media li a:hover{
+    opacity: .8;
+}
+.social-media .curriculo{
+    background-color: #06c185;
+}
+.social-media .linkedin{
+    background-color: #1d87bd;
+}
+.social-media .github{
+    background-color: #545454;
 }

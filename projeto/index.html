@@ -11,19 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Portifólio - Arthur</title>
 </head>
 <body>
     <main class="card"> <!-- Cartão principal -->
         <div class="my-info"> <!-- Minhas informações / sobre mim -->
-            <img src="src/assets/img-perfil.jpeg" alt="minha foto de perfil"> <!-- Imagem de perfil -->
-            <h1>Arthur Oliveira</h1> <!-- Nome -->
-            <h2>Desenvolvedor FontEnd Júnior</h2> <!-- Cargo -->
+            <img src="src/assets/img-perfil.jpeg" alt="minha foto de perfil" id="perfil"> <!-- Imagem de perfil -->
+            <h1 class="name">Arthur Oliveira</h1> <!-- Nome -->
+            <h2 class="office">Desenvolvedor FontEnd Júnior</h2> <!-- Cargo -->
         </div>
         <div class="content"> <!-- Conteudo -->
             <ul class="tabs"> <!-- abas -->
-                <li class="tab">  <!-- Aba sobre mim -->
+                <li class="tab select">  <!-- Aba sobre mim -->
                     <img src="src/assets/sobre.gif" alt="icone de sobre mim"> <!-- icone sobre mim -->
                 </li>
                 <li class="tab"> <!-- Aba redes sociais -->
@@ -31,22 +32,22 @@
                 </li>
             </ul>
             <div class="info-tabs"> <!-- Informações das abas -->
-                <div class="info"> <!-- info do card 1 / sobre mim -->
+                <div class="info select"> <!-- info do card 1 / sobre mim -->
                     <h3 class="sub-title">Sobre</h3> <!-- sub titulo -->
                     <div class="desc"> <!-- descrição -->
                         <p>
                         Oi! meu nome é Arthur Oliveira, seja bem-vindo(a)!
                         </p>
                         <p> <!-- Pequeno texto de apresentação -->
-                        Conheci a programação a pouco tempo, mas desde o primeiro contato fiquei apaixonado por essa tecnologia. A partir daí, venho estudando por alguns cursos, além da minha faculdade para aprofundar meus conhecimento sobre diversas linguagens, principalmente, <span>HTML, CSS e JavaScript.</span>. Agora, meu sonho é trabalhar com programação e atualmente comecei a colocar esse sonho em prática fazendo portifólios para mostrar o que posso fazer!
+                        Conheci a programação a pouco tempo, mas desde o primeiro contato fiquei apaixonado por essa tecnologia. A partir daí, venho estudando por alguns cursos, além da minha faculdade para aprofundar meus conhecimento sobre diversas linguagens, principalmente, <span>HTML, CSS e JavaScript.</span> Agora, meu sonho é trabalhar com programação e atualmente comecei a colocar esse sonho em prática fazendo portifólios para mostrar o que posso fazer!
                     </p> 
                     </div>
                 </div>
                 <div class="info"> <!-- info card 2 / redes sociais -->
                     <h3 class="sub-title">Minhas Redes</h3> <!-- sub titulo -->
-                    <ul> <!-- lista de links -->
+                    <ul class="social-media"> <!-- lista de Redes sociais -->
                         <li>
-                            <a href="#" target="_blank" class="curriculo">Curriculo</a> <!-- Arrumar curriculo para linkar aqui! -->
+                            <a href="#" target="_blank" class="curriculo">Currículo</a> <!-- Arrumar curriculo para linkar aqui! -->
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/arthur-oliveira-a2a0a5232/" target="_blank" class="linkedin">Linkedin</a>
