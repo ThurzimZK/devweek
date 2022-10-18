@@ -18,9 +18,35 @@
 // console.log(document.querySelectorAll('.tab'));
 const tabs = document.querySelectorAll('.tab')
 
-// passo 2
 tabs.forEach(tab => {
+    // passo 2
     tab.addEventListener('click', function(){
-        
+        if(tab.classList.contains('select')){
+            return;
+        }
+
+        selectTab(tab)
+
+        showInfo(tab)
     })
 });
+
+function selectTab(tab){
+    // passo 3
+    const tabSelect = document.querySelector('.tab.select')
+    tabSelect.classList.remove('select')
+
+    // passo 4
+    tab.classList.add('select')
+}
+function showInfo(tab){
+     // passo 5
+     const infoSelect = document.querySelector('.info.select')
+     infoSelect.classList.remove('select')
+
+     // passo 6
+     const idOfInfo = `info-${tab.id}`
+
+     const infoToshow = document.getElementById(idOfInfo)
+     infoToshow.classList.add('select')
+}
